@@ -13,7 +13,7 @@ export function banFC(context: Rule.RuleContext): Rule.RuleListener {
         searchForGenerics[0].replace(/<([\s\S]*)>$/g, "$1");
 
       // if it includes FC
-      if (text.includes("FC")) {
+      if (text.match(/^: (React\.)?FC(<[\S\s]*>)?$/g)) {
         // report the error
         context.report({
           node,
