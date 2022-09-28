@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-function-component-export",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "./dist/index.js",
   "files": [
     "dist/**"
