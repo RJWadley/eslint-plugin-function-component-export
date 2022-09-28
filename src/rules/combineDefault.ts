@@ -21,7 +21,6 @@ export function combineDefault(context: Rule.RuleContext): Rule.RuleListener {
         // if we found a function declaration with the same name as the default
         // report the error
         if (functionNode) {
-          console.log("found function declaration");
           context.report({
             node: exportNode,
             message: `Combine default export with function declaration`,
